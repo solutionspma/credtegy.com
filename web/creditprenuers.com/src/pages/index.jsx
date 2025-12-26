@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Head>
         <title>CreditPreneurs | Economic Empowerment Through Credit & Mentorship</title>
-        <meta name="description" content="Transform your financial future with CreditPreneurs. Learn credit repair, secure funding, and join a movement of economic empowerment led by Shakur Coy Mac." />
+        <meta name="description" content="Transform your financial future with CreditPreneurs. Learn credit repair, secure funding, and join a movement of economic empowerment led by Shakur Mac." />
         <meta property="og:title" content="CreditPreneurs | Economic Empowerment Through Credit & Mentorship" />
         <meta property="og:description" content="Transform your financial future with CreditPreneurs. Learn credit repair, secure funding, and join a movement of economic empowerment." />
       </Head>

@@ -28,11 +28,13 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img 
-                src="/images/logo.png" 
-                alt="CreditPreneurs" 
-                className="h-10 w-auto"
-              />
+              <div className="bg-gray-800 rounded-lg p-2">
+                <img 
+                  src="/images/logo.png" 
+                  alt="CreditPreneurs" 
+                  className="h-10 w-auto"
+                />
+              </div>
             </div>
             <p className="text-gray-400 text-sm mb-4">
               Economic empowerment through credit repair, funding strategies, and mentorship.

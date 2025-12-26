@@ -8,7 +8,7 @@ export default function Mentorship() {
     <>
       <Head>
         <title>CreditPreneurs Mentorship | Direct Access to Success</title>
-        <meta name="description" content="Join the CreditPreneurs mentorship program. Get direct access to Shakur Coy Mac, weekly calls, and a community of winners building wealth together." />
+        <meta name="description" content="Join the CreditPreneurs mentorship program. Get direct access to Shakur Mac, weekly calls, and a community of winners building wealth together." />
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -25,7 +25,7 @@ export default function Mentorship() {
                 CreditPreneurs<br />Inner Circle
               </h1>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-                Stop trying to figure it out alone. Get direct mentorship from Shakur Coy Mac and a community of action-takers building wealth together.
+                Stop trying to figure it out alone. Get direct mentorship from Shakur Mac and a community of action-takers building wealth together.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#join" className="btn-secondary text-lg">
@@ -53,7 +53,7 @@ export default function Mentorship() {
                   </div>
                   <h3 className="text-xl font-bold mb-2">Weekly Group Calls</h3>
                   <p className="text-gray-600">
-                    Live sessions every week with Coy Mac. Get your questions answered in real-time.
+                    Live sessions every week with Shakur. Get your questions answered in real-time.
                   </p>
                 </div>
 

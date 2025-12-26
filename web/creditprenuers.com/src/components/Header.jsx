@@ -19,11 +19,13 @@ export default function Header() {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <img 
-              src="/images/logo.png" 
-              alt="CreditPreneurs" 
-              className="h-10 w-auto"
-            />
+            <div className="bg-gray-900 rounded-lg p-2">
+              <img 
+                src="/images/logo.png" 
+                alt="CreditPreneurs" 
+                className="h-8 w-auto"
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

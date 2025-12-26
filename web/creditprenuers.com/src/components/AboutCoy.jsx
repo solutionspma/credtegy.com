@@ -5,12 +5,12 @@ export default function AboutCoy() {
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Coy Mac Photo */}
+          {/* Shakur Photo */}
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src="/images/coy-mac.jpg" 
-                alt="Shakur Coy Mac - CreditPreneurs Founder" 
+                alt="Shakur Mac - CreditPreneurs Founder" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -23,9 +23,9 @@ export default function AboutCoy() {
 
           {/* Content */}
           <div>
-            <h2 className="section-title mb-6">Meet Coy Mac</h2>
+            <h2 className="section-title mb-6">Meet Shakur</h2>
             <p className="text-gray-600 text-lg mb-6">
-              Shakur "Coy Mac" isn't just a credit expert—he's someone who's walked the same path you're on. 
+              Shakur Mac isn't just a credit expert—he's someone who's walked the same path you're on. 
               From struggling with bad credit and closed doors to building multiple successful businesses, 
               his journey is proof that transformation is possible.
             </p>

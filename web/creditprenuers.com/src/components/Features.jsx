@@ -27,7 +27,7 @@ export default function Features() {
     {
       icon: '🤝',
       title: 'Mentorship Access',
-      description: 'Get direct guidance from Coy Mac and our community of successful entrepreneurs.',
+      description: 'Get direct guidance from Shakur Mac and our community of successful entrepreneurs.',
       color: 'bg-red-100',
     },
     {

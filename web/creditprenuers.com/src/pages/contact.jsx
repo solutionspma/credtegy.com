@@ -84,7 +84,7 @@ export default function Contact() {
                         <a href="/mentorship" className="text-accent-gold hover:underline">→ Join the $47/mo Mentorship</a>
                       </li>
                       <li>
-                        <a href="/about" className="text-accent-gold hover:underline">→ Learn about Coy Mac</a>
+                        <a href="/about" className="text-accent-gold hover:underline">→ Learn about Shakur Mac</a>
                       </li>
                     </ul>
                   </div>

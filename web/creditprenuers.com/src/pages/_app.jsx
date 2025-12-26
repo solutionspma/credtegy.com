@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="CreditPreneurs - Economic empowerment through credit repair, funding mentorship, and mindset transformation. Join the movement with Shakur Coy Mac." />
+        <meta name="description" content="CreditPreneurs - Economic empowerment through credit repair, funding mentorship, and mindset transformation. Join the movement with Shakur Mac." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />

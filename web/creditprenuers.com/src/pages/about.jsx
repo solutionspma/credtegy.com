@@ -6,8 +6,8 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About Shakur Coy Mac | CreditPreneurs</title>
-        <meta name="description" content="Learn about Shakur Coy Mac's journey from struggle to success, and how he's helping others achieve financial freedom through credit mastery and mentorship." />
+        <title>About Shakur Mac | CreditPreneurs</title>
+        <meta name="description" content="Learn about Shakur Mac's journey from struggle to success, and how he's helping others achieve financial freedom through credit mastery and mentorship." />
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -20,7 +20,7 @@ export default function About() {
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                    Meet Shakur "Coy Mac"
+                    Meet Shakur Mac
                   </h1>
                   <p className="text-xl text-gray-300 mb-8">
                     Entrepreneur. Credit Expert. Community Leader. Movement Builder.
@@ -38,7 +38,7 @@ export default function About() {
                   <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                     <img 
                       src="/images/coy-mac.jpg" 
-                      alt="Shakur Coy Mac" 
+                      alt="Shakur Mac" 
                       className="w-full h-full object-cover"
                     />
                   </div>

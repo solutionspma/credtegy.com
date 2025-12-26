@@ -68,7 +68,7 @@ export default function EbookCTA() {
                     Master Your Credit. Secure Your Funding. Build Your Empire.
                   </p>
                   <div className="border-t border-white/20 pt-4">
-                    <p className="text-sm text-gray-300">By Shakur "Coy Mac"</p>
+                    <p className="text-sm text-gray-300">By Shakur Mac</p>
                   </div>
                 </div>
               </div>
