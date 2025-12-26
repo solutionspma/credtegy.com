@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { captureLead } from '@/lib/supabase'
 
 export default function LeadForm({ 
   formId = 'lead_capture', 
@@ -14,25 +15,36 @@ export default function LeadForm({
 
   const { register, handleSubmit, formState: { errors } } = useForm()
 
+  // Get UTM parameters from URL
+  const getUtmParams = () => {
+    if (typeof window === 'undefined') return {}
+    const params = new URLSearchParams(window.location.search)
+    return {
+      utm_source: params.get('utm_source'),
+      utm_medium: params.get('utm_medium'),
+      utm_campaign: params.get('utm_campaign'),
+      utm_term: params.get('utm_term'),
+      utm_content: params.get('utm_content'),
+    }
+  }
+
   const onSubmit = async (data) => {
     setIsSubmitting(true)
     setError(null)
 
     try {
-      // In production, this would hit the ModCRM API
+      const utmParams = getUtmParams()
+      
+      // Capture lead to Supabase (Pitch Marketing Agency database)
       const payload = {
         ...data,
         form_id: formId,
         product_id: productId,
-        source: 'coyslogistics.com',
-        timestamp: new Date().toISOString(),
-        utm_campaign: typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('utm_campaign') : null,
+        ...utmParams,
       }
 
-      console.log('Form submission:', payload)
-
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500))
+      await captureLead(payload)
+      console.log('Lead captured successfully:', payload)
 
       // If payment is required, redirect to Stripe
       if (showPayment && productId) {
@@ -41,6 +53,7 @@ export default function LeadForm({
 
       setIsSuccess(true)
     } catch (err) {
+      console.error('Form submission error:', err)
       setError('Something went wrong. Please try again.')
     } finally {
       setIsSubmitting(false)
