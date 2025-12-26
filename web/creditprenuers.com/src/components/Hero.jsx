@@ -1,23 +1,34 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { useEffect, useRef } from 'react'
 
 export default function Hero() {
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    // Force video to play on mount
+    if (videoRef.current) {
+      videoRef.current.play().catch(err => {
+        console.log('Video autoplay failed:', err)
+      })
+    }
+  }, [])
+
   return (
     <section className="relative text-white py-20 md:py-28 overflow-hidden min-h-[90vh] flex items-center">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video
+          ref={videoRef}
           autoPlay
           loop
           muted
           playsInline
           preload="auto"
-          poster="/images/coy-mac.jpg"
           className="w-full h-full object-cover"
-          onCanPlay={(e) => e.target.play()}
+          style={{ objectFit: 'cover' }}
         >
           <source src="/images/creditPrenuersHero.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
         </video>
         {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-black/60"></div>
