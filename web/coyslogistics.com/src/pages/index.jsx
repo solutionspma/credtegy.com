@@ -68,7 +68,7 @@ export default function Home() {
               <img 
                 src="/images/coyslogo.jpg" 
                 alt="Coys Logistics" 
-                className="w-12 h-12 rounded-lg object-cover"
+                className="w-16 h-10 rounded-lg object-contain bg-slate-800 border-2 border-green-500"
               />
               <span className="font-bold text-xl hidden sm:block">Coys Logistics</span>
             </Link>

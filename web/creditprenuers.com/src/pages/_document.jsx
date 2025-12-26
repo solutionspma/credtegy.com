@@ -14,10 +14,13 @@ export default function Document() {
         {/* Open Graph / Social Media */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="CreditPreneurs" />
-        <meta property="og:image" content="/images/og-image.jpg" />
+        <meta property="og:image" content="/images/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="1200" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="/images/og-image.png" />
         
         {/* Stripe */}
         <script src="https://js.stripe.com/v3/" async></script>
