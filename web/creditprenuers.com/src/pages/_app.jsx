@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import Head from 'next/head'
+import LeadGate from '@/components/LeadGate'
 
 export default function App({ Component, pageProps }) {
   return (
@@ -9,7 +10,9 @@ export default function App({ Component, pageProps }) {
         <meta name="description" content="CreditPreneurs - Economic empowerment through credit repair, funding mentorship, and mindset transformation. Join the movement with Shakur Mac." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+      <LeadGate>
+        <Component {...pageProps} />
+      </LeadGate>
     </>
   )
 }

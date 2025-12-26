@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NEXT_PUBLIC_SUPABASE_URL = "https://hkfcfooyqaonbszhnrpx.supabase.co"
+  NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhrZmNmb295cWFvbmJzemhucnB4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3NzA0ODIsImV4cCI6MjA4MjM0NjQ4Mn0.YrkH0TwpkKFVmh-FL7f-B996c0yQg3PhcPEu3GJmiuE"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
